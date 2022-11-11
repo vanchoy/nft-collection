@@ -1,0 +1,47 @@
+.button_clipboard-container {
+    /* Copy to Clipboard container settings */
+      margin: var(--button_clipboard-container-margin);
+      text-align: var(--button_clipboard-container-text_align);
+      display: var(--button_clipboard-container-display);
+    /* -------------(END)-------------- */
+
+    /* Copy to clipboard text settings */
+      .button-copy_text {
+        margin: 0 auto;
+        padding: var(--btn_clipboard-text-box-padding);
+        min-width: var(--btn_clipboard-text-box-min_width);
+        background: var(--btn_clipboard-text-box-bg_color);
+        font-family: inherit;
+        font-size: 16px;
+        display: inline-block;
+        text-align: center;
+        color: var(--btn_clipboard-text_color);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        box-shadow: var(--btn_clipboard-text-box-box_shadow);
+        box-sizing: border-box;
+      }
+    /* -------------(END)-------------- */
+    
+    /* Copy to clipboard button settings */
+      button {
+        margin: 0 auto;
+        padding: var(--btn_clipboard-button-padding);
+        background-color: var(--btn_clipboard-button-bg_color);
+        font-size: 16px;
+        color: var(--btn_clipboard-button-icon-color);
+        text-decoration: none;
+        outline: 0;
+        cursor: pointer;
+        border: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        
+        &:hover {
+          background-color: var(--btn_clipboard-button-hover-bg_color);
+        }
+      }
+    /* -------------(END)-------------- */
+  }

@@ -1,0 +1,100 @@
+.table-container {
+    /* Table container settings */
+      width: var(--table-container-width);
+      max-height: var(--table-container-max_height);
+      margin: 0 auto;
+      overflow: auto;
+      border: var(--table-container-border);
+      border-radius: var(--table-container-border_radius);
+      box-sizing: border-box;
+    /* -------------(END)-------------- */
+  
+    /* Table scrollbar Settings */
+      /* width */
+      &::-webkit-scrollbar {
+        width: 12px;
+      }
+    
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: #c9c9c9;
+      }
+    
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #999;
+      }
+    
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    
+      /* Set arrow down icon in scroll bar */
+      &::-webkit-scrollbar-button:vertical:increment {
+          background: url("../assets/icons/down-arrow.svg");
+          background-color: #adadad;
+          background-repeat: no-repeat;
+          text-align: center;
+          text-decoration: none;
+          border: none;
+          color: #fff;
+      }
+
+      /* Set arrow up icon in scroll bar */
+      &::-webkit-scrollbar-button:vertical:decrement {
+          background: url("../assets/icons/up-arrow.svg");
+          background-color: #adadad;
+          background-repeat: no-repeat;
+          text-align: center;
+          text-decoration: none;
+          border: none;   
+      }
+    /* -------------(END)-------------- */
+
+    /* Table & table elements Settings */
+      table {
+        /* Table settings */
+          width: var(--table-box-width);
+          margin: var(--table-box-margin);
+          text-align: center;
+          
+          /* Table cell settings*/
+            td {
+              text-align: center;
+              border-left: 1px solid #000;
+          
+              &:first-child {
+                border-left: none;
+              }
+            }
+          /* -------------(END)-------------- */
+          
+          /* Table row settings */
+            tr {
+              text-align: center;
+              border-bottom: 1px solid #000;
+          
+              &:last-child {
+                border-bottom: none;
+              }
+            }
+          /* -------------(END)-------------- */
+
+          /* Table header settings */
+            th {
+              text-align: center;
+            }
+          
+            .header-row {
+              margin: 0 auto;
+              background: var(--table-header-bg_color);
+              
+              p {
+                color: var(--table-header-text-color);
+              }
+            }
+          /* -------------(END)-------------- */
+      }
+    /* -------------(END)-------------- */
+}
